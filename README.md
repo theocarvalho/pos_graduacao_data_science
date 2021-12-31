@@ -17,6 +17,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
     - [Gravação do vídeo](https://drive.google.com/file/d/1DvmeyTGILfP9-qb8EOIjpLnMk4IfMbL2/view?usp=sharing).
+    - [Google Sheets: Abordagem didática de construção do modelo KNN](https://docs.google.com/spreadsheets/d/1APPm642Bdz5dQ72c-2a4yhz_jxlWmH50dzLXKNS7c5Q/edit#gid=1883246793).
 
 ---
 
