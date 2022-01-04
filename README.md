@@ -1,6 +1,3 @@
-# pos_graduacao_data_science
-Projeto de pós graduação BI Master (Data Science)
-
 <!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
 
 # Abordagem didática para iniciantes em Machine Learning
