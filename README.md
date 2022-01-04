@@ -62,7 +62,7 @@ O valor de K se demonstrou com bom acréscimo marginal até por volta de k=10. A
  
 ### 4. Conclusões
  
-Com a utilização do modelo de Machine Learning supervisionado K Nearest Neighbors, foi desenvolvido um modelo com acurácia acima de 80%, o que é superior aos 33% que a completa aleatoriedade resultaria para um dataset como este -- número igual de amostras entre as três classes.
+Com a utilização do modelo de Machine Learning supervisionado K Nearest Neighbors, foi desenvolvido um modelo com acurácia acima de 87%, o que é superior aos 33% que a completa aleatoriedade resultaria para um dataset como este -- número igual de amostras entre as três classes.
  
 O exercício de simplificar e, de uma certa forma, explicar conceitos através de ferramenta popular trouxe invariavelmente uma capacidade de entender com maior profundidade uma técnica de Ciência de Dados. Sendo este método replicável e com potencial de ser ainda mais didático de absorção de conhecimento por parte de profissionais leigos no assunto.
  
