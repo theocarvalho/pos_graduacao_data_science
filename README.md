@@ -37,7 +37,39 @@ This project intends to demystify the knowledge behind data science and machine 
 The educational video delves into data normalization, euclidean distance, error rate and model calibration. The dataset has 4 attributes by sample, being petal’s length one of its main factors to differentiate within classes — which can be Setosa, Virginica and Versicolor. Finally, the project brings an important concept of learning essential fundamentals before applying in scale via code. Data Science can be used and understood by all kinds of professional backgrounds, and if well applied, can be flexible enough to solve a vast majority of problems.
 
 
+### 1. Introdução
+ 
+A utilização do Iris dataset é pode ser feita através de diferentes maneiras, dado que é um dataset popular encontrado na comunidade de Ciência de dados. Este dataset apresenta 150 amostras. Os 4 atributos são físicos, relacionados diretamente a sua anatomia.
+Com a análise exploratória é possível perceber através de, por exemplo, um gráfico de dispersão, que existem alguns atributos que ajudam a diferenciar até certo ponto uma classe da outra, como é o caso do comprimento da pétala que ajuda a determinar uma das três classes. Porém, a análise exploratória por si só é limitante. Utilizar a abordagem de aprendizado de máquina pode trazer um modelo de classificação mais pragmático e escalável para determinar as classes.
+ 
+ 
+### 2. Modelagem
+ 
+Um dos principais desafios da modelagem é conseguir aplicá-la dentro de uma planilha, utilizando de apenas fórmulas nativas da ferramenta. O primeiro desafio passa por selecionar randomicamente o dado. Para isso é criado uma fórmula de probabilidade para determinar um alvo de percentual do dataset para treino e teste. Com o dataset de treino apartado, é importante normalizar seus atributos -- obviamente, sem levar em conta os dados de treino.
+A partir deste cenário, a complexidade de trazer um modelo comumente utilizado em linguagem de programação para linguagem excel/spreadsheet passa a aumentar consideravelmente. Para criar os parâmetros de distância, é criado uma matriz n por n que, utilizando a fórmula de distância euclidiana, mede a distância entre todos os membros.
+Com a distância entre as amostras da base de treino, é possível iterar no parâmetro k (quantidade de vizinhos para votação da classe) e comparar os resultados. Realizar tal objetivo é uma atividade desafiadora, mas de uma certa forma, mais didática do que quando comparamos com uma iteração em linguagem de programação. Para isso, é criado uma tabela em que cada linha da amostra tem colunas, sendo elas, a quantidade de cada classe para determinado valor de k. A partir de então, é possível comparar o valor real com a classe que recebeu a maior quantidade de votos. Consequentemente, é possível medir a taxa de erro, métrica que guia para determinar o melhor valor de k.
+Após análise do parâmetro k na base de treino é possível replicar na base de teste e aferir se o valor da taxa de erro está similar à base anterior.
+Por último, esse mesmo reacional é utilizado na construção do script em python. Mas desta vez, é utilizado de bibliotecas e práticas conhecidas no mercado que abstraem consideravelmente toda essa construção -- o que para fins didáticos pode ser pior, mas inquestionavelmente é escalável para resolver problemas de negócio. Dentre as práticas, é perceptível a facilidade de criar um iterador para valor de k, conseguindo atribuir diferentes valores e checando sua taxa de erro.
+ 
+### 3. Resultados
+ 
+Acredito que esse trabalho alcançou resultados em diferentes áreas. A acurácia conseguiu chegar a valores de 87% ou superior. A performance do modelo foi satisfatória para o tamanho da base. Há ressalvas para aplicar tanto o modelo em uma planilha quanto o código quando a base chegar nas centenas de milhares e nas dezenas de milhões, respectivamente.
+ 
+O valor de K se demonstrou com bom acréscimo marginal até por volta de k=10. A partir de então, em ambos os algoritmos, a taxa de erro apresenta uma redução crescente, no âmbito do código, saindo de abaixo de 10% para acima de 20% de taxa de erro.
+ 
+É importante também ressaltar o que foi na verdade o principal objetivo deste trabalho, conseguir sintetizar conceitos de Machine Learning em formato mais didático e palatável para profissionais distantes do universo da Ciência de Dados. Sobre esse objetivo, foi produzido um material em planilha Google Spreadsheet, ferramenta atualmente gratuita e de utilização global, com a montagem integral desde a extração até a montagem e avaliação do modelo de machine learning funcional. Em conjunto, também há uma explicação em modelo passo-a-passo de um vídeo explicativo dividido em 7 tópicos
+ 
+ 
+### 4. Conclusões
+ 
+Com a utilização do modelo de Machine Learning supervisionado K Nearest Neighbors, foi desenvolvido um modelo com acurácia acima de 80%, o que é superior aos 33% que a completa aleatoriedade resultaria para um dataset como este -- número igual de amostras entre as três classes.
+ 
+O exercício de simplificar e, de uma certa forma, explicar conceitos através de ferramenta popular trouxe invariavelmente uma capacidade de entender com maior profundidade uma técnica de Ciência de Dados. Sendo este método replicável e com potencial de ser ainda mais didático de absorção de conhecimento por parte de profissionais leigos no assunto.
+ 
+Com isso, o profissional que busca trazer maiores conhecimentos sobre análise de dados, ciência de dados e machine learning tende a diminuir seu obstáculo inicial de aprendizado. Utilizando da técnica de associar conhecimentos novos a uma ferramenta com maior chance de familiaridade permite que haja maior sinergia e engajamento para aprender. Aplicar com maior consciência métodos de aprendizado de máquina abrem potenciais novas oportunidades para o profissional tomar decisões de negócio ainda mais valorosas.
+ 
 ---
+
 
 Matrícula: 192.671.143
 
